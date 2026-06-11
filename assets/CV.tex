@@ -1,0 +1,216 @@
+% ============================================
+%  Academic CV for PhD Application
+%  Jiaqi Zhou — Corpus-Assisted CDA / Computational Discourse Analysis
+%  Compiler: XeLaTeX (Overleaf: Menu → Compiler → XeLaTeX)
+% ============================================
+
+\documentclass[10pt,a4paper]{article}
+
+% ---------- Page Layout ----------
+\usepackage[margin=1.6cm, bottom=1.2cm, top=1.2cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.05}
+
+% ---------- Fonts ----------
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}
+  {\setmainfont{Times New Roman}}
+  {\setmainfont{TeX Gyre Termes}}
+
+% ---------- Colors ----------
+\usepackage[dvipsnames]{xcolor}
+\definecolor{accent}{HTML}{000000}
+\definecolor{dark}{HTML}{333333}
+\definecolor{gray}{HTML}{666666}
+
+% ---------- Packages ----------
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks, colorlinks=false, urlcolor=black, linkcolor=black, citecolor=black]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+
+% ---------- No Indent ----------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.15em}
+
+% ---------- Header/Footer ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize \thepage}
+
+% ---------- Compact Lists ----------
+\setlist{nosep, leftmargin=1.2em, itemsep=0.05em, topsep=0.1em}
+
+% ---------- Section Style ----------
+\titleformat{\section}
+  {\bfseries\Large\color{accent}}
+  {}
+  {0pt}
+  {}
+  [\vspace{-0.4em}\rule{\textwidth}{0.5pt}\vspace{-0.1em}]
+
+\titlespacing{\section}{0pt}{0.6em}{0.15em}
+
+% ---------- Custom Commands ----------
+\newcommand{\cventry}[4]{
+  \textbf{#1} \hfill \textit{\footnotesize #2} \\
+  \footnotesize #3 \\
+  \footnotesize #4
+  \vspace{0.15em}
+}
+
+\newcommand{\pubentry}[1]{
+  \footnotesize #1
+}
+
+% ---------- Document ----------
+\begin{document}
+
+% ==================== HEADER ====================
+\begin{center}
+  {\Large\bfseries Jiaqi Zhou} \\[0.15em]
+
+  \footnotesize
+  \faEnvelope\ \href{mailto:jiaqi_zhou@mails.ccnu.edu.cn}{jiaqi\_zhou@mails.ccnu.edu.cn} \quad
+  \faPhone\ (+86) 183-2726-0989 \quad
+  \faGlobe\ \href{https://your-site.com}{your-site.com} \\[0.05em]
+  \faMapMarker*\ Wuhan, China
+\end{center}
+
+\vspace{-0.3em}
+
+% ==================== RESEARCH INTERESTS ====================
+\section{Research Interests}
+
+\begin{itemize}
+  \item Corpus-Assisted Critical Discourse Analysis
+  \item Computational Discourse Analysis \quad\textbullet\quad Critical Discourse Analysis
+  \item Computational Linguistics \quad\textbullet\quad AI Ethics \& Media Discourse
+\end{itemize}
+
+% ==================== EDUCATION ====================
+\section{Education}
+
+\cventry{Central China Normal University -- MA in Linguistics}{Sep 2024 -- Jun 2027}
+  {Core Modules: Corpus Linguistics (92.4), Functional Linguistics (90.0), Research Methods in Linguistics (96.0), Applied Linguistics (95.8)}
+  {GPA: 4.04/5.0 \quad Weighted Average: 90.6/100}
+
+\cventry{Wuhan University of Science and Technology -- BA in English Language}{Sep 2020 -- Jun 2024}
+  {Core Modules: English Linguistics, Advanced English, Research Methods in English, Academic Writing}
+  {GPA: 3.58/4.0 \quad Weighted Average: 89.5/100 \quad Outstanding Graduate}
+
+% ==================== RESEARCH EXPERIENCE ====================
+\section{Research Experience}
+
+\cventry{Principal Investigator -- Provincial Innovation \& Entrepreneurship Program}{May 2023 -- Jun 2024}
+  {Project: ``A Socio-Cultural Investigation of Chinese EFL Learners' Emotional Experiences, Learner Identities, and Identity Transformation'' (Provincial-Level, Supervisor: Associate Prof.\ Zaibo Long)}
+  {Led a provincial research project examining emotional experiences and learner identity. Designed longitudinal data collection using stimulated recall and semi-structured interviews.}
+
+\cventry{Research Project -- Independent Research}{Jan 2023 -- Jan 2024}
+  {``Visualizing the Knowledge Domain of Sociocultural Theory in SLA: A Bibliometric Analysis'' -- collected Web of Science bibliometric data, constructed co-citation and trend visualizations using CiteSpace}
+  {}
+
+% ==================== PUBLICATIONS ====================
+\section{Publications}
+
+\subsection*{\normalsize Journal Articles}
+
+\pubentry{
+  \textbf{Zhou, J.}, \& Zhang, X. (2026). Language assemblage: By Alastair Pennycook. Cambridge University Press, 2024. \textit{[Journal Name]}. \hfill \textsc{ssci}
+}
+
+\pubentry{
+  Wang, J., \& \textbf{Zhou, J.} (under review). Revisiting posthumanism in language studies: Twenty years on (2006--2025). \textit{Language Sciences}. \hfill \textsc{ssci}
+}
+
+\pubentry{
+  Wang, J., \& \textbf{Zhou, J.} (under review). Powerless, passive, and paralyzed individuals facing the surging tide of AI technology. \textit{Language Sciences}. \hfill \textsc{ssci}
+}
+
+\pubentry{
+  Wang, J., \& \textbf{Zhou, J.} (under review). The passive, muted, and powerless public in the controversial AI revolution. \textit{IEEE Transactions on Professional Communication}. \hfill \textsc{ssci}
+}
+
+\pubentry{
+  \textbf{Zhou, J.} (under review). Agenda bundling and temporal drift: A multi-method sentiment analysis of AI coverage across mainstream and specialist news media. \textit{Digital Scholarship in the Humanities}. \hfill \textsc{ssci}
+}
+
+\pubentry{
+  \textbf{Zhou, J.} (under review). Divergent paths of AI ethics governance: A structural topic modeling analysis of Chinese and U.S. policy discourse. \textit{Government Information Quarterly}. \hfill \textsc{ssci}
+}
+
+\pubentry{
+  \textbf{Zhou, J.}, \& Long, Z. (2024). A bibliometric analysis of international second language identity research (2004--2023). \textit{Advances in Psychology}, 14(7), 472--487. \href{https://doi.org/10.12677/ap.2024.147504}{doi:10.12677/ap.2024.147504}
+}
+
+\subsection*{\normalsize Conference Presentations}
+
+\pubentry{
+  \textbf{Zhou, J.} (2026, June). \textit{Divergent paths of AI ethics governance.} Digital Intelligence, Language, and the Future Forum, HUST, Wuhan.
+}
+
+\pubentry{
+  \textbf{Zhou, J.} (2026, May). \textit{Constructing the ``China AI Threat.''} Symposium on Language Governance in the Digital Intelligence Era, Wuhan University, Wuhan.
+}
+
+% ==================== TEACHING EXPERIENCE ====================
+\section{Teaching Experience}
+
+\cventry{Teaching Assistant -- Central China Normal University}{Sep 2025 -- Jan 2026}
+  {Assisted in course preparation and materials development; administered grading and maintained academic records; provided instructional support across weekly sessions.}
+  {}
+
+% ==================== HONOURS \& AWARDS ====================
+\section{Honours \& Awards}
+
+\begin{itemize}
+  \item Graduate Scholarship, Central China Normal University \hfill 2023--2025
+  \item Outstanding Graduate, Wuhan University of Science and Technology \hfill 2024
+  \item National First Prize, National English Competition (NECCS) \hfill 2023
+  \item National First Prize, ``FLTRP\textperiodcentered Wordmaster'' National Vocabulary Competition \hfill 2023
+  \item National Third Prize, ``FLTRP\textperiodcentered ETIC'' International Communication Competition \hfill 2025
+  \item Third Prize (Written Translation Final), CATTI Cup National Translation Competition \hfill 2023
+  \item National Second Prize, National College English Translation Competition \hfill 2022
+  \item Third-Class Scholarship, Wuhan University of Science and Technology \hfill 2022
+\end{itemize}
+
+% ==================== SKILLS ====================
+\section{Skills}
+
+\begin{itemize}
+  \item \textbf{Languages:} Mandarin (native), English (IELTS 7.5), Japanese (basic), Cantonese (basic)
+  \item \textbf{Methods:} Corpus construction \& annotation, (critical) discourse analysis, computational text analysis (Python, R), statistical modeling, qualitative coding
+  \item \textbf{Software:} R, AntConc, WordSmith 9, LancsBox X, UAM CorpusTool, CiteSpace, Python
+\end{itemize}
+
+% ==================== ACADEMIC SERVICE ====================
+\section{Academic Service}
+
+\begin{itemize}
+  \item Organising Committee, The 2nd Interdisciplinary Forum on Language and Cognitive Science, CCNU \hfill 2024
+\end{itemize}
+
+% ==================== REFEREES ====================
+\section{Referees}
+
+\begin{tabularx}{\textwidth}{XX}
+  \textbf{Prof.\ Jiayu Wang} & \textbf{Prof.\ Zaibo Long} \\
+  Professor & Associate Professor \\
+  Dept.\ of Linguistics, & Dept.\ of Chinese, \\
+  Shanghai International Studies University & Wuhan University of Science and Technology \\
+  \href{mailto:xxx@xxx.edu.cn}{xxx@xxx.edu.cn} & \href{mailto:xxx@xxx.edu.cn}{xxx@xxx.edu.cn} \\
+\end{tabularx}
+
+\vspace{0.3em}
+
+\rule{\textwidth}{0.5pt}
+\vspace{0.1em}
+\begin{center}
+  \footnotesize
+  Last updated: June 2026
+\end{center}
+
+\end{document}
